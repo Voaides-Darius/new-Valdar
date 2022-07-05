@@ -148,7 +148,7 @@ img{
 .hero-description{
   width: min(100%, 25rem);
   color: var(--clr-white);
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -156,7 +156,7 @@ img{
   display: flex;
   align-items: center;
   width: fit-content;
-  height: 58px;
+  height: 3.625rem;
   padding-inline: 5em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
