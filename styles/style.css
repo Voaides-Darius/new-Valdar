@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* -- root section -- */
+:root{
+  --clr-white: #FFF;
+  --clr-black: #000;
+  --clr-dark-blue: #29578B;
+  --clr-light-blue: #07ACEC;
+  --grid-length: 87.5rem;
+  --regular: 400;
+  --bold: 700; 
+  --step--2: clamp(1.26rem, calc(0.78rem + 2.40vw), 2.88rem);
+  --step--1: clamp(1.51rem, calc(0.89rem + 3.10vw), 3.60rem);
+  --step-0: clamp(1.81rem, calc(1.02rem + 3.98vw), 4.50rem);
+  --step-1: clamp(2.17rem, calc(1.15rem + 5.11vw), 5.63rem);
+  --step-2: clamp(2.61rem, calc(1.30rem + 6.55vw), 7.03rem);
+  --step-3: clamp(3.13rem, calc(1.46rem + 8.38vw), 8.79rem);
+  --step-4: clamp(3.76rem, calc(1.62rem + 10.71vw), 10.99rem);
+  --step-5: clamp(4.51rem, calc(1.78rem + 13.66vw), 13.73rem);
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 4rem;
+  height: 10000px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.dark-highlight{
+  color: var(--clr-dark-blue);
+  font-weight: 700;
+}
+
+.light-highlight{
+  color: var(--clr-light-blue);
+  font-weight: 700;
+}
+
+/* -- header section --*/
+.header{
+  height: 4rem;
+  position: fixed;
+  left: 0; 
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: var(--clr-white);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--grid-length);
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+.navbar{
+  display: none;
+  height: 4rem;
+}
+
+.navbar-list{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navbar-list li{
+  height: 100%;
+}
+
+.navbar-link{
+  display: flex;
+  align-items: center;
+  gap: .25em;
+  height: 100%;
+  padding-inline: .5em;
+  color: var(--clr-dark-blue);
+}
+
+.navbar-link:hover{
+  border-bottom: 2px solid var(--clr-dark-blue);
+}
+
+.link-icon{
+  fill: white;
+}
+
+.link-name{
+  font-size: 0.875em;
+}
+
+#link-active{
+  background-color: var(--clr-dark-blue);
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.menu-img{
+  width: 100%;
+  height: 100%;
+}
+
+.menu-icon{
+  fill: var(--clr-dark-blue);
+}
+
+/* -- main section -- */
+.main{
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url("../img/hero-bg-desktop.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container{
+  display: grid;
+  gap: 1.5rem;
+  max-width: var(--grid-length);
+  margin-inline: auto;
+  padding-inline: 1em;
+  padding-top: clamp(1em, 5vh + 5vw + 1em, 13.25em);
+  padding-bottom: clamp(2em, 7vh + 7vw + 1em, 13.25em);
+}
+
+.hero-title{
+  font-size: var(--step-1);
+  line-height: 1.2;
+  color: var(--clr-white);
+}
+
+.hero-description{
+  width: min(100%, 25rem);
+  color: var(--clr-white);
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+
+.CTA-Primary{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 58px;
+  padding-inline: 5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-white);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.875em;
+}
+
+.CTA-Primary:hover{
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.hero-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2em;
+}
+
+@media (min-width: 42.625em)
+{ 
+  .hero-title{
+    text-align: left;
+  }
+  .hero-description{
+    text-align: left;
+  }
+  .hero-contact{
+    flex-direction: row;
+    align-items: center;
+  }
+  .CTA-Primary{
+    height: 100%;
+  }
+}
+
+@media(min-width: 60em)
+{ 
+  .hero-description{
+    font-size: 1em;
+  }
+  .hero-title{
+    line-height: 1;
+  }
+  .hero-description{
+    width: min(100%, 31.25rem);
+  }
+}
+
+/* -- desktop screen size --*/
+@media (min-width: 67.5em)
+{
+  .navbar{
+    display: block;
+  }
+  .menu-icon{
+    display: none;
+  }
+}
+@media (min-width: 87.5em)
+{ 
+  .hero-container{
+    gap: 2.5em;
+  }
+}
