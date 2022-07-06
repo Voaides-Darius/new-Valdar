@@ -4,6 +4,7 @@
   --clr-white: #FFF;
   --clr-black: #000;
   --clr-dark-blue: #29578B;
+  --clr-darkest-blue: #1d4571;
   --clr-light-blue: #07ACEC;
   --grid-length: 87.5rem;
   --regular: 400;
@@ -122,7 +123,7 @@ img{
 /* -- main section -- */
 .main{
   max-width: 100%;
-  background-color: #ededed;
+  background-color: #f7f6f6;
 }
 
 .hero{
@@ -173,7 +174,7 @@ img{
 }
 
 .CTA-Primary:hover{
-  letter-spacing: 2px;
+  background-color: var(--clr-darkest-blue);
   transition: 0.3s;
 }
 
@@ -193,11 +194,6 @@ img{
   font-size: 0.75em;
 }
 
-.CTA-Secondary:hover{
-  letter-spacing: 2px;
-  transition: 0.3s;
-}
-
 .hero-contact{
   display: flex;
   flex-direction: column;
@@ -206,6 +202,8 @@ img{
 }
 
 .service{
+  display: grid;
+  gap: 1.5rem;
   max-width: 100%;
   padding-top: 5em;
 }
@@ -259,7 +257,24 @@ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.service-img-right{
   object-position: right;
+}
+
+.service-img-left{
+  object-position: left;
+}
+
+.service-list{
+  color: var(--clr-dark-blue);
+  font-size: 0.875em;
+  margin-left: 1rem;
+}
+
+.service-img-center{
+  object-position: center;
 }
 
 @media (min-width: 32.625em){
@@ -298,6 +313,10 @@ img{
   .service-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .reverse-section{
+    grid-column: 2;
+    grid-row: 1;
   }
 }
 
