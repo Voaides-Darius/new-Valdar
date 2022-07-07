@@ -106,7 +106,7 @@ img{
 }
 
 .link-name{
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 #link-active{
@@ -160,7 +160,7 @@ img{
 .hero-description{
   width: min(100%, 25rem);
   color: var(--clr-white);
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -176,7 +176,7 @@ img{
   color: var(--clr-white);
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 0.75em;
+  font-size: 12px;
   transition: 0.3s;
 }
 
@@ -198,7 +198,7 @@ img{
   color: var(--clr-dark-blue);
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 0.75em;
+  font-size: 12px;
 }
 
 .hero-contact{
@@ -258,7 +258,7 @@ img{
 .service-paragraph{
   color: var(--clr-dark-blue);
   line-height: 1.6;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 .service-img{
   width: 100%;
@@ -276,7 +276,7 @@ img{
 
 .service-list{
   color: var(--clr-dark-blue);
-  font-size: 0.875em;
+  font-size: 14px;
   margin-left: 1rem;
 }
 
@@ -328,7 +328,7 @@ img{
 }
 
 .team-box-stats{
-  font-size: 3em;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1;
 }
@@ -336,7 +336,7 @@ img{
 .team-box-title{
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.875em;
+  font-size: 14px;
   text-align: center;
   line-height: 1;
   color: var(--clr-light-blue);
@@ -414,7 +414,7 @@ img{
 }
 
 .article-type{
-  font-size: 0.875em;
+  font-size: 14px;
   font-weight: 700;
   margin-right: .25rem;
   letter-spacing: 1px;
@@ -426,13 +426,13 @@ img{
 }
 
 .article-date{
-  font-size: 0.875em;
+  font-size: 14px;
   font-weight: 400;
   font-style: italic;
 }
 
 .article-title{
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 1.2;
   color: var(--clr-dark-blue);
   font-weight: 700;
@@ -441,7 +441,7 @@ img{
   line-height: 1.6;
   color: var(--clr-dark-blue);
   margin-bottom: .5rem;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 .blog-article a{
@@ -514,7 +514,7 @@ img{
 @media(min-width: 60em)
 { 
   .hero-description{
-    font-size: 1em;
+    font-size: 16px;
   }
   .hero-title{
     line-height: 1;
@@ -555,6 +555,9 @@ img{
 }
 @media (min-width: 87.5em)
 { 
+  body{
+    
+  }
   .hero-container{
     gap: 2.5em;
   }
