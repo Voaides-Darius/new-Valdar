@@ -73,14 +73,21 @@ img{
 
 .navbar{
   display: none;
-  height: 4rem;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 100%;
+  width: 100vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+  animation: left-to-right .5s;
 }
 
 .navbar-list{
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  gap: 1.5rem;
   width: 100%;
-  height: 100%;
   list-style-type: none;
 }
 
@@ -90,15 +97,12 @@ img{
 
 .navbar-link{
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: .25em;
+  gap: .25rem;
   height: 100%;
   padding-inline: .5em;
   color: var(--clr-dark-blue);
-}
-
-.navbar-link:hover{
-  border-bottom: 2px solid var(--clr-dark-blue);
 }
 
 .link-icon{
@@ -123,6 +127,7 @@ img{
 
 .menu-icon{
   fill: var(--clr-dark-blue);
+  cursor: pointer;
 }
 
 /* -- main section -- */
@@ -537,6 +542,23 @@ img{
 {
   .navbar{
     display: block;
+    position: static;
+    background-color: white;
+    height: 4rem;
+    width: auto;
+    padding: 0;
+    animation: none;
+    box-shadow: none;
+  }
+  .navbar-list{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+  }
+  .navbar-link:hover{
+    border-bottom: 2px solid var(--clr-dark-blue);
   }
   .menu-icon{
     display: none;
@@ -555,9 +577,6 @@ img{
 }
 @media (min-width: 87.5em)
 { 
-  body{
-    
-  }
   .hero-container{
     gap: 2.5em;
   }
@@ -599,5 +618,14 @@ img{
   }
   to{
     transform: translateY(0);
+  }
+}
+
+@keyframes right-to-left{
+  from{
+    transform: translate(0)
+  }
+  to{
+    transform: translate(-100%);
   }
 }
