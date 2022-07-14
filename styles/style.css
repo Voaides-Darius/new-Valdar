@@ -63,6 +63,8 @@ img{
 }
 
 .header-container{
+  background-color: white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,6 +85,7 @@ img{
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.5);
   animation: left-to-right .5s;
   overflow-y: auto;
+  z-index: -1;
 }
 
 .navbar-list{
@@ -550,6 +553,7 @@ img{
     padding: 0;
     animation: none;
     box-shadow: none;
+    z-index: 1;
   }
   .navbar-list{
     display: flex;
