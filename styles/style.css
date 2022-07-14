@@ -82,7 +82,7 @@ img{
   padding-bottom: 1em;
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.5);
   animation: left-to-right .5s;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .navbar-list{
