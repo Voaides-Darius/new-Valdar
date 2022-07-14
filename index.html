@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Valdar.ro - Servicii de Promovare online, Marketing online, SEO pe continut</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -12,7 +12,7 @@
   <header class = "header">
     <div class = "header-container">
       <img src = "img/logo-valdar.jpg" alt = "@TODO" class = "logo-site" width = "142" height = "64">
-      <nav class = "navbar">
+      <nav class = "navbar" id = "navbar">
         <ul class = "navbar-list">
           <li>
             <a href = "#" class = "navbar-link" id = "link-active">
@@ -405,7 +405,7 @@
           </li>
         </ul>
       </nav>
-      <img src = "icons/menu-svgrepo-com.svg" alt = "@TODO" class = "menu-icon" width = "32" height = "32">
+      <img src = "icons/menu-svgrepo-com.svg" alt = "@TODO" class = "menu-icon" width = "32" height = "32" id = "menu-toggle">
     </div>
   </header>
   <!-- MAIN -->
@@ -659,7 +659,7 @@
             </div>
           </article>
           <article class = "blog-article">
-            <img src = "img/blog-thumbnail-1.jpg" alt = "@TODO" class = "blog-thumbnail">
+            <a href = "#"><img src = "img/blog-thumbnail-1.jpg" alt = "@TODO" class = "blog-thumbnail"></a>
             <div class = "article-content">
               <div class = "article-meta">
                 <span class = "article-type">
@@ -684,5 +684,6 @@
     </section>
   </main>
   <footer class = "footer"></footer>
+  <script src = "scripts/index.js"></script>
 </body>
 </html>
