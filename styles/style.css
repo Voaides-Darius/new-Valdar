@@ -143,7 +143,7 @@ img{
 .hero{
   max-width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: url("../img/hero-bg-desktop.jpg");
+  background-image: url("../img/hero-bg-desktop.webp");
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -480,7 +480,7 @@ img{
 
 .bar-contact-separator{
   max-width: 100%;
-  background-image: url(../img/earth-bg.jpg);
+  background-image: url(../img/earth-bg.webp);
   background-size: cover;
   background-position: center;
   margin-top: 5rem;
