@@ -6,6 +6,7 @@
   --clr-dark-blue: #29578B;
   --clr-darkest-blue: #1d4571;
   --clr-light-blue: #07ACEC;
+  --clr-extreme-dark-blue: #091522;
   --grid-length: 87.5rem;
   --regular: 400;
   --bold: 700; 
@@ -505,6 +506,86 @@ img{
   text-align: center;
 }
 
+/* -- footer section -- */
+
+.footer{
+  max-width: 100%;
+  background-color: var(--clr-extreme-dark-blue);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.8);
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.footer-container{
+  max-width: var(--grid-length);
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+.footer-grid{
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-col{
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-list{
+  display: grid;
+  gap: .5rem;
+  list-style-type: none;
+}
+
+.footer-contact-field{
+  color: var(--clr-light-blue);
+}
+
+.footer-list li{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.footer-contact-icon{
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+
+.footer-heading{
+  font-size: 1.5em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  color: var(--clr-white);
+  text-decoration: underline;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: var(--clr-light-blue);
+}
+
+.footer-social-media{
+  display: flex;
+  list-style-type: none;
+  gap: .5rem;
+}
+
+.social-media-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+small{
+  display: block;
+  color: var(--clr-white);
+  text-align: center;
+  margin-top: 5rem;
+}
+
 @media (min-width: 32.625em){
   .section-contact{
     width: max-content;
@@ -560,6 +641,12 @@ img{
   }
   .blog-span-2 .blog-thumbnail{
     height: 100%;
+  }
+  .footer-col{
+    place-content: center;
+  }
+  .footer-grid{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
