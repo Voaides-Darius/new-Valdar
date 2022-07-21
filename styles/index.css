@@ -644,9 +644,6 @@ small{
     grid-template-columns: 1fr 40%;
     grid-column: span 2;
   }
-  .blog-span-2 .blog-thumbnail{
-    height: 100%;
-  }
   .footer-col{
     place-content: center;
   }
