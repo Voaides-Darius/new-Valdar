@@ -405,38 +405,50 @@
       <img src = "icons/menu-svgrepo-com.svg" alt = "Menu Toggle" class = "menu-icon" width = "32" height = "32" id = "menu-toggle">
     </div>
   </header>
-  <!-- Main Section -->
+  
   <main class = "main">
-    <div class = "hero">
-      <div class = "hero-container">
-        <h1 class = "hero-title">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elitconsectetur adipisicing elit!
-        </h1>
-        <img src = "img/google-partners-logo.webp" alt = "Valdar este partener Google" width = "140" height = "58" class = "hero-google-icon">
+    <div class = "main-container">
+      <div class = "hero">
+        <div class = "form-container">
+          <form method = "get" class = "form">
+            <div>
+              <label class = "label">Numele tău complet:</label>
+              <input type = "text" class = "input" placeholder = "Completeaza numele aici..." required>
+            </div>
+            <div>
+              <label class = "label">Telefonul tău:</label>
+              <input type = "tel" class = "input" placeholder = "Completeaza telefonul aici..." required>
+            </div>
+            <div>
+              <label class = "label">Email-ul tău:</label>
+              <input type = "email" class = "input" placeholder = "Completeaza email-ul aici..." required>
+            </div>
+            <div>
+              <label class = "label">Alege optiunea dorita</label>
+              <select class = "input" required>
+                <option>Google Ads</option>
+                <option>Seo Pe Continut</option>
+                <option>Facebook Ads</option>
+                <option>Web Development</option>
+                <option>Mai multe optiuni</option>
+              </select>
+            </div>
+            <div>
+              <label class = "label" >Cum te putem ajuta?</label>
+              <textarea style="resize: none;" class = "input" placeholder = "Problema detaliata" required></textarea>
+            </div>
+            <input type = "submit" value = "Submit" id = "submit">
+          </form>
+        </div>
+        <div class = "hero-col">
+          <h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+        </div>
       </div>
     </div>
-    <div class = "form-container">
-      <h2 class = "form-title">Hai sa fim parteneri!</h2>
-      <p class = "form-description">Hai sa-ti ridicam brand-ul la un alt nivel.</p>
-      <form class = "contact-form">
-        <div>
-          <input type = "text" placeholder = "Name" name = "name" required class = "input-field">
-        </div>
-        <div>
-          <input type = "email" placeholder = "Email" name = "email" required class = "input-field">
-        </div>
-        <div>
-          <input type = "tel" placeholder = "Phone" name = "phone" required class = "input-field">
-        </div>
-        <div>
-          <textarea placeholder = "Cum te putem ajuta?" required class = "input-field" id = "input-help"></textarea>
-        </div>
-        <div>
-          <input type = "submit" required class = "input-field" value = "Submit" id = "input-submit">
-        </div>
-      </form>
-    </div>
   </main>
+
   <footer class = "footer">
     <div class = "footer-container">
       <div class = "footer-grid">
