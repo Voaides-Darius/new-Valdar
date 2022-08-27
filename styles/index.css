@@ -651,6 +651,9 @@ small{
 
 @media (min-width: 42.625em)
 { 
+  .hero{
+    padding-inline: 3em;
+  }
   .hero-title{
     text-align: left;
   }
@@ -691,7 +694,10 @@ small{
 }
 
 @media (min-width: 55em)
-{
+{ 
+  .hero{
+    padding-inline: 5em;
+  }
   .blog-grid{
     grid-template-columns: repeat(2, 1fr);
   }
