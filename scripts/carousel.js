@@ -6,7 +6,7 @@ for (let i = 1; i < slides.length; i++)
 
 document.addEventListener('DOMContentLoaded', init())
 function init(){
-  let query = window.matchMedia('(min-width: 67.5em)')
+  let query = window.matchMedia('(min-width: 50em)')
   if (query.matches)
     setInterval(slideChange, 7000)
 }
