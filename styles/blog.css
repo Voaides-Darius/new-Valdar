@@ -287,7 +287,7 @@ img{
 
 .article-introduction p{
   color: var(--clr-white);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.6;
   opacity: 0.5;
   font-weight: 500;
@@ -377,7 +377,9 @@ img{
   .post-thumbnail-small{
     height: 100%;
   }
-
+  .blog-title{
+    font-size: var(--step-3);
+  }
 }
 
 @media(min-width: 70em)
