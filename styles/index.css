@@ -260,6 +260,7 @@ img{
 }
 
 .service-title{
+  opacity: 0;
   font-size: var(--step--2);
   line-height: 1.1;
   text-align: center;
@@ -267,6 +268,7 @@ img{
   text-decoration: underline;
   margin-bottom: 1rem;
   padding-inline: 1em;
+  z-index: -1;
 }
 
 .service-content{
@@ -286,6 +288,7 @@ img{
   max-width: 95%;
   background-color: var(--clr-white);
   height: fit-content;
+  opacity: 0;
 }
 
 .section-contact{
@@ -305,6 +308,7 @@ img{
   width: 100%;
   object-fit: cover;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 
 .service-img-right{
@@ -327,7 +331,7 @@ img{
 
 .team{
   max-width: 100%;
-  padding-top: 2em;
+  padding-top: 1.5em;
 }
 
 .team-container{
@@ -397,6 +401,10 @@ img{
   object-fit: cover;
   object-position: center;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.team-img-responsive{
+  opacity: 0;
 }
 
 .team-icon{
@@ -528,6 +536,7 @@ img{
   padding-inline: 1em;
   padding-top: calc(7vw + 1em);
   padding-bottom: calc(7vw + 1em);
+  opacity: 0;
 }
 
 .bar-contact-text{
@@ -615,6 +624,21 @@ small{
   color: var(--clr-white);
   text-align: center;
   margin-top: 2rem;
+}
+
+.service-title-animation{
+  animation: top-to-bottom-2 1s;
+  opacity: 1;
+}
+
+.service-about-animation-1{
+  animation: left-to-right-2 1s;
+  opacity: 1;
+}
+
+.service-about-animation-2{
+  animation: right-to-left-2 1s;
+  opacity: 1;
 }
 
 @media (min-width: 32.625em){
@@ -816,21 +840,55 @@ small{
   }
 }
 
+@keyframes left-to-right-2{
+  from{
+    transform: translate(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
 @keyframes top-to-bottom{
   from{
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
   to{
     transform: translateY(0);
   }
 }
 
-@keyframes right-to-left{
+@keyframes top-to-bottom-2{
   from{
-    transform: translate(0)
+    transform: translateY(-35%);
+    opacity: 0;
   }
   to{
-    transform: translate(-100%);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes right-to-left{
+  from{
+    transform: translate(100%);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+
+@keyframes right-to-left-2{
+  from{
+    transform: translate(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
   }
 }
 
