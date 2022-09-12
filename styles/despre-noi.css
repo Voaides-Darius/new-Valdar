@@ -590,6 +590,10 @@ img{
   max-width: 100%;
 }
 
+.partners img{
+  opacity: 0;
+}
+
 .partners-container{
   max-width: var(--grid-length);
   margin-inline: auto;
