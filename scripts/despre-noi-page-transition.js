@@ -128,7 +128,6 @@ function serviceImgAnimationLeft(entries){
 // Team Box 
 
 const teamBox = document.querySelectorAll('.team-box')
-console.log(teamBox)
 teamBoxOptions = {
   root: null,
   rootMargin: '0px',
@@ -155,7 +154,7 @@ const teamImg = document.querySelectorAll('picture')
 teamImgOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.33
+  threshold: 0.5
 }
 
 const teamImgObserver = new IntersectionObserver
@@ -185,6 +184,7 @@ function partnersAnimation(entries){
   entries.forEach((entry) => {
     if (entry.isIntersecting === true)
       entry.target.classList.add('blog-animation-1')
+      entry.target.style.opacity = "1";
   })
 }
 
@@ -314,7 +314,6 @@ function tabletSizeAnimation(){
   // Team Box 
 
 const teamBox = document.querySelectorAll('.team-box')
-console.log(teamBox)
 teamBoxOptions = {
   root: null,
   rootMargin: '0px',
@@ -341,7 +340,7 @@ const teamImg = document.querySelectorAll('picture')
 teamImgOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.33
+  threshold: 0.5
 }
 
 const teamImgObserver = new IntersectionObserver
@@ -363,7 +362,7 @@ const partners = document.querySelectorAll('.partners-grid img');
 partnersOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0
+  threshold: 1
 }
 
 const partnersObserver = new IntersectionObserver(partnersAnimation, partnersOptions)
@@ -371,6 +370,7 @@ function partnersAnimation(entries){
   entries.forEach((entry) => {
     if (entry.isIntersecting === true)
       entry.target.classList.add('blog-animation-1')
+      entry.target.style.opacity = "1";
   })
 }
 
@@ -500,7 +500,6 @@ function phoneSizeAnimation(){
   // Team Box 
 
 const teamBox = document.querySelectorAll('.team-box')
-console.log(teamBox)
 teamBoxOptions = {
   root: null,
   rootMargin: '0px',
@@ -527,7 +526,7 @@ const teamImg = document.querySelectorAll('picture')
 teamImgOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.33
+  threshold: 0.5
 }
 
 const teamImgObserver = new IntersectionObserver
@@ -557,6 +556,7 @@ function partnersAnimation(entries){
   entries.forEach((entry) => {
     if (entry.isIntersecting === true)
       entry.target.classList.add('blog-animation-1')
+      entry.target.style.opacity = "1";
   })
 }
 
