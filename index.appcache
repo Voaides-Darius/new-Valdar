@@ -1,0 +1,29 @@
+AddType text/cache-manifest .appcache
+CACHE MANIFEST
+img/team-valdar-2.webp
+img/earth-bg.webp
+img/hero-bg-desktop.webp
+img/stats-1.webp
+img/seo.webp
+img/web-development.webp
+img/stats-2.webp
+img/pexels-thought-catalog-2228555.webp
+img/logo-valdar.webp
+img/stats-3.webp
+img/google.webp
+icons/instagram.png
+img/google-partners-logo.webp
+icons/team-svgrepo-com-2.svg
+styles/index.css
+icons/impossible-triangle-svgrepo-com.svg
+icons/linkedin.png
+icons/phone-svgrepo-com.svg
+scripts/index-page-transition.js
+icons/smiley-square-face-svgrepo-com.svg
+icons/timer-svgrepo-com.svg
+icons/facebook.png
+icons/heart-svgrepo-com.svg
+icons/email-svgrepo-com.svg
+icons/quality-svgrepo-com.svg
+scripts/menu.js
+icons/details-svgrepo-com.svg
